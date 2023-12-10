@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{19062C37-2FCD-4FEE-ADD5-FFD8EE8490E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jack</RootNamespace>
+    <AssemblyName>Jack</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Jack.ico</ApplicationIcon>
+    <StartupObject>Jack.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GameOverlay, Version=4.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GameOverlay.Net.4.3.1\lib\net47\GameOverlay.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAPICodePack.Core.1.1.0\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAPICodePack.Shell.1.1.0\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="Process.NET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Process.NET.1.0.8\lib\Process.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress, Version=0.33.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpCompress.0.33.0\lib\net462\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct2D1.4.2.0\lib\net45\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DXGI.4.2.0\lib\net45\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.7.0.0\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="ATH\LCS.cs" />
+    <Compile Include="ATH\MDL.cs" />
+    <Compile Include="ATH\MSG.cs" />
+    <Compile Include="ATH\NTS.cs" />
+    <Compile Include="ATH\PFL.cs" />
+    <Compile Include="ATH\PFLS.cs" />
+    <Compile Include="ATH\REQ.cs" />
+    <Compile Include="ATH\SNS.cs" />
+    <Compile Include="ConfusedByAttribute.cs" />
+    <Compile Include="Core\Addon.cs" />
+    <Compile Include="Core\Angle.cs" />
+    <Compile Include="Core\AutoReconnect.cs" />
+    <Compile Include="Core\Build.cs" />
+    <Compile Include="Core\Chat.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Crypt.cs" />
+    <Compile Include="Core\CustomUI.cs" />
+    <Compile Include="Core\Descriptors.cs" />
+    <Compile Include="Core\Frames.cs" />
+    <Compile Include="Core\Initialize.cs" />
+    <Compile Include="Core\JackMath.cs" />
+    <Compile Include="Core\Json.cs" />
+    <Compile Include="Core\Key.cs" />
+    <Compile Include="Core\Keybinds.cs" />
+    <Compile Include="Core\KeyType.cs" />
+    <Compile Include="Core\MemoryObject.cs" />
+    <Compile Include="Core\Offsets.cs" />
+    <Compile Include="Core\OffsetsManager.cs" />
+    <Compile Include="Core\Overlay.cs" />
+    <Compile Include="Core\Pathfinder.cs" />
+    <Compile Include="Core\PremiumSettings.cs" />
+    <Compile Include="Core\Settings.cs" />
+    <Compile Include="Core\UInt128.cs" />
+    <Compile Include="Core\W2S.cs" />
+    <Compile Include="Core\Window.cs" />
+    <Compile Include="Core\Write.cs" />
+    <Compile Include="Core\_globals.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="dummy_ptr\{3d5ced78-6c53-49fb-80a8-e456a8981632}.cs" />
+    <Compile Include="Engine\AntiStuck.cs" />
+    <Compile Include="Engine\Combat.cs" />
+    <Compile Include="Engine\EventManager.cs" />
+    <Compile Include="Engine\Fishing.cs" />
+    <Compile Include="Engine\Fly.cs" />
+    <Compile Include="Engine\FrameManager.cs" />
+    <Compile Include="Engine\GameClient.cs" />
+    <Compile Include="Engine\Loot.cs" />
+    <Compile Include="Engine\Monitor.cs" />
+    <Compile Include="Engine\Nodes.cs" />
+    <Compile Include="Engine\ObjectManager.cs" />
+    <Compile Include="Engine\Pixel.cs" />
+    <Compile Include="Engine\PlayerManager.cs" />
+    <Compile Include="Engine\Skinning.cs" />
+    <Compile Include="Engine\SpellRotation.cs" />
+    <Compile Include="Engine\Timer.cs" />
+    <Compile Include="Engine\Walk.cs" />
+    <Compile Include="Forms\APIHelp.cs" />
+    <Compile Include="Forms\CalcSize.cs" />
+    <Compile Include="Forms\ExtensionMethods.cs" />
+    <Compile Include="Forms\frmDialog.cs" />
+    <Compile Include="Forms\frmDialog.Designer.cs">
+      <DependentUpon>frmDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDownload.cs" />
+    <Compile Include="Forms\frmDownload.Designer.cs">
+      <DependentUpon>frmDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDownloadMaps.cs" />
+    <Compile Include="Forms\frmDownloadMaps.Designer.cs">
+      <DependentUpon>frmDownloadMaps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLicense.cs" />
+    <Compile Include="Forms\frmLicense.Designer.cs">
+      <DependentUpon>frmLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmList.cs" />
+    <Compile Include="Forms\frmList.Designer.cs">
+      <DependentUpon>frmList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLoading.cs" />
+    <Compile Include="Forms\frmLoading.Designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainAccount.cs" />
+    <Compile Include="Forms\frmMainAccount.Designer.cs">
+      <DependentUpon>frmMainAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainAddon.cs" />
+    <Compile Include="Forms\frmMainAddon.Designer.cs">
+      <DependentUpon>frmMainAddon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainKeybinds.cs" />
+    <Compile Include="Forms\frmMainKeybinds.Designer.cs">
+      <DependentUpon>frmMainKeybinds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainMessages.cs" />
+    <Compile Include="Forms\frmMainMessages.Designer.cs">
+      <DependentUpon>frmMainMessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainModules.cs" />
+    <Compile Include="Forms\frmMainModules.Designer.cs">
+      <DependentUpon>frmMainModules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainOverlay.cs" />
+    <Compile Include="Forms\frmMainOverlay.Designer.cs">
+      <DependentUpon>frmMainOverlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainProfiles.cs" />
+    <Compile Include="Forms\frmMainProfiles.Designer.cs">
+      <DependentUpon>frmMainProfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainProfilesPremium.cs" />
+    <Compile Include="Forms\frmMainProfilesPremium.Designer.cs">
+      <DependentUpon>frmMainProfilesPremium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainRotations.cs" />
+    <Compile Include="Forms\frmMainRotations.Designer.cs">
+      <DependentUpon>frmMainRotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainSettings.cs" />
+    <Compile Include="Forms\frmMainSettings.Designer.cs">
+      <DependentUpon>frmMainSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMessageBox.cs" />
+    <Compile Include="Forms\frmMessageBox.Designer.cs">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmModulesPricing.cs" />
+    <Compile Include="Forms\frmModulesPricing.Designer.cs">
+      <DependentUpon>frmModulesPricing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOverlayMenu.cs" />
+    <Compile Include="Forms\frmOverlayMenu.Designer.cs">
+      <DependentUpon>frmOverlayMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOverlayRecorder.cs" />
+    <Compile Include="Forms\frmOverlayRecorder.Designer.cs">
+      <DependentUpon>frmOverlayRecorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProfile.cs" />
+    <Compile Include="Forms\frmProfile.Designer.cs">
+      <DependentUpon>frmProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProfileEvent.cs" />
+    <Compile Include="Forms\frmProfileEvent.Designer.cs">
+      <DependentUpon>frmProfileEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProfileEventSave.cs" />
+    <Compile Include="Forms\frmProfileEventSave.Designer.cs">
+      <DependentUpon>frmProfileEventSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProfileSave.cs" />
+    <Compile Include="Forms\frmProfileSave.Designer.cs">
+      <DependentUpon>frmProfileSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRotation.cs" />
+    <Compile Include="Forms\frmRotation.Designer.cs">
+      <DependentUpon>frmRotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRotationAddSpell.cs" />
+    <Compile Include="Forms\frmRotationAddSpell.Designer.cs">
+      <DependentUpon>frmRotationAddSpell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRotationConditions.cs" />
+    <Compile Include="Forms\frmRotationConditions.Designer.cs">
+      <DependentUpon>frmRotationConditions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRotationMacro.cs" />
+    <Compile Include="Forms\frmRotationMacro.Designer.cs">
+      <DependentUpon>frmRotationMacro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRotationSave.cs" />
+    <Compile Include="Forms\frmRotationSave.Designer.cs">
+      <DependentUpon>frmRotationSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSplashScreen.cs" />
+    <Compile Include="Forms\frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSplashScreenControls.cs" />
+    <Compile Include="Forms\frmSplashScreenControls.Designer.cs">
+      <DependentUpon>frmSplashScreenControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStore.cs" />
+    <Compile Include="Forms\frmStore.Designer.cs">
+      <DependentUpon>frmStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStoreBuy.cs" />
+    <Compile Include="Forms\frmStoreBuy.Designer.cs">
+      <DependentUpon>frmStoreBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStoreDashboard.cs" />
+    <Compile Include="Forms\frmStoreDashboard.Designer.cs">
+      <DependentUpon>frmStoreDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStoreProfile.cs" />
+    <Compile Include="Forms\frmStoreProfile.Designer.cs">
+      <DependentUpon>frmStoreProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStoreProfiles.cs" />
+    <Compile Include="Forms\frmStoreProfiles.Designer.cs">
+      <DependentUpon>frmStoreProfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTooltip.cs" />
+    <Compile Include="Forms\frmTooltip.Designer.cs">
+      <DependentUpon>frmTooltip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store\StoreProfiles.cs" />
+    <Compile Include="Forms\Tooltip.cs" />
+    <Compile Include="Forms\WebClient.cs" />
+    <Compile Include="frmMain.cs" />
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HTK\HotKey.cs" />
+    <Compile Include="Jack_ProcessedByFody.cs" />
+    <Compile Include="Models\ActionBar.cs" />
+    <Compile Include="Models\AreaTrigger.cs" />
+    <Compile Include="Models\Camera.cs" />
+    <Compile Include="Models\Container.cs" />
+    <Compile Include="Models\Events.cs" />
+    <Compile Include="Models\FromList.cs" />
+    <Compile Include="Models\Items.cs" />
+    <Compile Include="Models\Objects.cs" />
+    <Compile Include="Models\Pet.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\PlayerMe.cs" />
+    <Compile Include="Models\ProfileSettings.cs" />
+    <Compile Include="Models\Rotation.cs" />
+    <Compile Include="Models\RotationSettings.cs" />
+    <Compile Include="Models\SearchObjects.cs" />
+    <Compile Include="Models\Spell.cs" />
+    <Compile Include="Models\Spellbook.cs" />
+    <Compile Include="Models\StuckPaths.cs" />
+    <Compile Include="Models\Units.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Read.cs" />
+    <Compile Include="Tools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
