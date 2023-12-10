@@ -1,7 +1,7 @@
 WoW Bots featured in our WoW Fish Bot Bundle are not limited to just fishing
 included for your All In One Launcher that can automate tasks for everything including:
 
-Pixel based or Memory Based with LUA Unlockers
+<br>Pixel based or Memory Based with LUA Unlockers
 +Rotations Done for you
 +Questing Done for you
 +Gathering Done for you
