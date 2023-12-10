@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6B54C0D-8FB1-46EE-92EC-DD0A5D5ED719}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RotationLabEngine</RootNamespace>
+    <AssemblyName>RotationLab</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>&lt;PrivateImplementationDetails&gt;{E39AAE57-6643-4572-829F-EE1D2660BE70}</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FMUtils.KeyboardHook" />
+    <Reference Include="Guna.UI2" />
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" />
+    <Reference Include="Microsoft.Web.WebView2.Core" />
+    <Reference Include="Microsoft.Web.WebView2.WinForms" />
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="NUniqueHardwareID" />
+    <Reference Include="PeanutButter.INI" />
+    <Reference Include="SharpClipboard" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsInput" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="-Module-{257AB92C-9F14-4BF8-A136-AD424ED38FED}.cs" />
+    <Compile Include="-Module-{cb13cea5-238d-4db2-b197-7f40acede0b8}.cs" />
+    <Compile Include="-PrivateImplementationDetails-{E39AAE57-6643-4572-829F-EE1D2.cs" />
+    <Compile Include="AutoBind.cs" />
+    <Compile Include="bSZew2cfycgxx2Qytd1\yQGkVJcOSOQdjuwds7e.cs" />
+    <Compile Include="BuffsDebuffs.cs" />
+    <Compile Include="ClassType.cs" />
+    <Compile Include="Convenant.cs" />
+    <Compile Include="CreatureType.cs" />
+    <Compile Include="DoItemCastArgs.cs" />
+    <Compile Include="DoMacroCastArgs.cs" />
+    <Compile Include="DoSpellCastArgs.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownloadUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDownloadUpdate.Designer.cs">
+      <DependentUpon>FrmDownloadUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HXZlbT7UB5IYGdPogh\fdnuM4r7mAGiieBZPu.cs" />
+    <Compile Include="Interceptor\Input.cs" />
+    <Compile Include="Interceptor\InterceptionDriver.cs" />
+    <Compile Include="Interceptor\KeyboardFilterMode.cs" />
+    <Compile Include="Interceptor\KeyPressedEventArgs.cs" />
+    <Compile Include="Interceptor\KeyState.cs" />
+    <Compile Include="Interceptor\KeyStroke.cs" />
+    <Compile Include="Interceptor\MouseFilterMode.cs" />
+    <Compile Include="Interceptor\MouseFlags.cs" />
+    <Compile Include="Interceptor\MousePressedEventArgs.cs" />
+    <Compile Include="Interceptor\MouseState.cs" />
+    <Compile Include="Interceptor\MouseStroke.cs" />
+    <Compile Include="Interceptor\Predicate.cs" />
+    <Compile Include="Interceptor\ScrollDirection.cs" />
+    <Compile Include="Interceptor\Stroke.cs" />
+    <Compile Include="Interceptor\XKeys.cs" />
+    <Compile Include="ItemInformation.cs" />
+    <Compile Include="jKfdjbkhweMBv9T4LF\QkZCxleFAdLKmShDaf.cs" />
+    <Compile Include="jQcNs35uSqehxrVAwdI\FecpwY5xoJeryAGx6TQ.cs" />
+    <Compile Include="LogEventArgs.cs" />
+    <Compile Include="LossOfControlType.cs" />
+    <Compile Include="Macro.cs" />
+    <Compile Include="MyU9Ep58ZH3s5ThDFJQ\vua32v5yjQhjRjK4YIO.cs" />
+    <Compile Include="oUFoSKR3C2hCk1na34\HC6h6qTeMKAGQ2QRdU.cs" />
+    <Compile Include="PFKsXUln68gK98ndGV\InA3Q4LFDQmiFopNqj.cs" />
+    <Compile Include="PowerType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pv3wLjFLovBNS8B3YH\xcBF6XfpTXPOK6FjeY.cs" />
+    <Compile Include="qh4tv5C06LoTjDckaL\icdoeGQQtZwolxBdqe.cs" />
+    <Compile Include="RotationLab.cs" />
+    <Compile Include="RotationLabHelper.cs" />
+    <Compile Include="RotationSetting.cs" />
+    <Compile Include="RuneType.cs" />
+    <Compile Include="Sk5EtwKTjRJr4xlhBC\Rxlep3aFWM75xoYk07.cs" />
+    <Compile Include="SpellCast.cs" />
+    <Compile Include="SpellInformation.cs" />
+    <Compile Include="UnitInformation.cs" />
+    <Compile Include="UnitType.cs" />
+    <Compile Include="vj6ZEIchxieKH6xwM2t\ceGL4JcAiPYF89VVIUS.cs" />
+    <Compile Include="WindowTracker.cs" />
+    <Compile Include="wKolMkxZecDx58YaRR4\MQ9uG3xi8RURJ9Fop2C.cs" />
+    <Compile Include="WowheadInfo.cs" />
+    <Compile Include="xDwZPux4SDqHCadp1SC\g7nourxp055gaU44Yrc.cs" />
+    <Compile Include="XR7RtrxI8Vm7Dgx9BKr\PnrHSvxSLFnA986pZWM.cs" />
+    <Compile Include="z6sH8Cxtx1xCxjgcS7P\ykD11HxHfZBYH7OcFOG.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="-9liA==" />
+    <EmbeddedResource Include="-jDrg==" />
+    <EmbeddedResource Include="-trge0JSoUzvqA==" />
+    <EmbeddedResource Include="-Ya9uvvWnXA==" />
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resources" />
+    <EmbeddedResource Include="b0494a1f-4bd3-+fQ36fSpzU5FR0JkEB1MPA==" />
+    <EmbeddedResource Include="b0494a1f-4bd3-07FJ8iFtB8yhQAnSsMs+Cw==" />
+    <EmbeddedResource Include="b0494a1f-4bd3-1BP2uuMDna8EVENK73f3kg==" />
+    <EmbeddedResource Include="b0494a1f-4bd3-3RpnyKOjPjM8SUplHBNdog==" />
+    <EmbeddedResource Include="b0494a1f-4bd3-7Hic+TL3JDB8m772m1Hy7g==" />
+    <EmbeddedResource Include="b0494a1f-4bd3-rXuzzA4DuzdpoFQY1YsYOQ==" />
+    <EmbeddedResource Include="Form1.resources" />
+    <EmbeddedResource Include="Form2.resources" />
+    <EmbeddedResource Include="FormLogin.resources" />
+    <EmbeddedResource Include="FrmDownloadUpdate.resources" />
+    <EmbeddedResource Include="MRfnuMxe84X69YMjyQ.3F7dyiuKnfVkapU2vQ" />
+    <EmbeddedResource Include="P3PMFAPrFAEEKaWdjv.7DXvmxE6PF8c6IS3QV" />
+    <EmbeddedResource Include="pEIYjZ8Oi0g613qrFD.5h8c3sqZDxhfFQcTEi" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+    <EmbeddedResource Include="RotationLab.g.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
