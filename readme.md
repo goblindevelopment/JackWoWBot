@@ -1,3 +1,13 @@
-If you want any reverse engineering services we are selling our reverse engineer's time at $300 per program which is a typical turn around time of an hour, you can contact us for more information and a quote ahead of time before buying as well.
+WoW Bots featured in our Bundle included for your All In One Launcher that can automate tasks for everything including:
 
-Any purchases are handled through the escrowned marketplace so a secure purchase is in place for both parties.
+Pixel based or Memory Based with LUA Unlockers
++Rotations Done for you
++Questing Done for you
++Gathering Done for you
++PvP Done for you
++Leveling Done for you
+
+All expansions compatible
++Classic: Hardcore, Season of Discovery, WOTLK
++Live Retail: Dragonflight 
+
