@@ -14,4 +14,4 @@ All expansions compatible<br>
 
 See the source code of some projects so you can see the validity and know that the WoW Fish Bundle includes Legit Software that is Safe to use and updated!<br>
 Preview a few tools at no cost before signing up!
-<a href="https://www.buymeacoffee.com/wowfish"><img src="https://github.com/goblindevelopment/WoWFishBot_Bundle/blob/main/BuyMeACoffee.png"></a>
+<a href="https://www.buymeacoffee.com/wowfish"><img src="[https://github.com/goblindevelopment/WoWFishBot_Bundle/blob/main/OldBuyMeACoffee.png?raw=true"></a>
